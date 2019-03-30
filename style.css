@@ -1,0 +1,242 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+.wrapper{
+    min-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 900px 502px 1027px 900px 522px 600px;
+    grid-gap: 10px;
+}
+
+.grid-item{
+    border: 1px solid #222;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+header.header_box .logo img{
+    margin-top: 87px;
+    margin-left: 210px;
+}
+
+header.header_box nav{
+    display:flex;
+    justify-content: flex-end;
+    margin-top: -4%;
+    margin-right: 10%;
+    text-transform: uppercase;
+    color: #222;
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+header.header_box nav ul{
+    display: flex;
+}
+header.header_box nav a{
+    margin-right: 10px;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+header .header_text{
+    margin-top: 200px;
+    margin-left: 210px;
+}
+header .header_text h1{
+    font-size: 72px;
+    font-family:'Fira Sans', sans-serif; 
+    font-weight: 100;
+    padding-bottom: 18px;
+}
+header .header_text h2 {
+    font-size: 72px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100;
+    padding-bottom: 27px;
+}
+header .header_text p {
+    font-size: 30px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100;
+
+}
+header .header_text span {
+    font-weight: 700;
+}
+
+
+
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about .about_text{
+    background-color:#f3f1ef;
+}
+.about .about_text .info_box{
+    margin-top: 113px;
+    margin-left: 58px;
+    text-align: left;
+    width: 485px;
+}
+
+
+
+
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.music{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.music-about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
