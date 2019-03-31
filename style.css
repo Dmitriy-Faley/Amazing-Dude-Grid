@@ -137,7 +137,6 @@ table {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 900px 502px 1027px 900px 522px 600px;
-    grid-gap: 10px;
 }
 
 .grid-item{
@@ -211,11 +210,24 @@ header .header_text span {
 .about .about_text{
     background-color:#f3f1ef;
 }
-.about .about_text .info_box{
+.about .info_box{
     margin-top: 113px;
     margin-left: 58px;
     text-align: left;
-    width: 485px;
+    width: 520px;
+}
+
+.about .info_box h3{
+    font-size: 24px;
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 45px;
+}
+.about .info_box p{
+    font-size: 36px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100;
 }
 
 
@@ -224,7 +236,50 @@ header .header_text span {
 .gallery{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 513px;
+    background-color: #3f729b;
 }
+.gallery .grid-item:nth-child(5){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.gallery .info_box{
+    margin-top: 123px;
+    margin-left: 200px;
+    color: #fff;
+}
+.gallery .info_box h4{
+    font-size: 24px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    color: inherit;
+    margin-bottom: 45px;
+}
+.gallery .info_box p{
+    font-size: 36px;
+    font-weight: 100;
+    font-family: 'Fira Sans', sans-serif;
+    margin-bottom: 43px;
+    color: inherit;
+}
+.gallery .info_box a{
+    color: inherit;
+    display: block;
+    width: 278px;
+    height: 37px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 21px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+
+}
+
+
 
 .music{
     display:grid;
