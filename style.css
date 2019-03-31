@@ -136,11 +136,11 @@ table {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 900px 502px 1027px 900px 522px 600px;
+    grid-template-rows: minmax(900px, auto) minmax(502px, auto) minmax(1027px,auto) 900px 522px 600px;
 }
 
 .grid-item{
-    border: 1px solid #222;
+    /*border: 1px solid #222;*/
 }
 
 .header{
@@ -263,7 +263,7 @@ header .header_text span {
     margin-bottom: 43px;
     color: inherit;
 }
-.gallery .info_box a{
+.gallery .info_box .button{
     color: inherit;
     display: block;
     width: 278px;
@@ -276,20 +276,186 @@ header .header_text span {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.1em;
-
 }
 
+
+.gallery .info_box .button:hover{
+    background-color: #fff;
+    transition: all 300ms ease-in-out;
+    color: #3f729b;
+}
 
 
 .music{
     display:grid;
     grid-template-columns: 1fr 3fr;
+    background-color: #282b2f;
+    background: url(./img/music.png) no-repeat center;
+    background-size: cover;
 }
+
+.music .grid-item:first-child{
+    background-color: #282b2f;
+}
+
+.music .container{
+    position: relative;
+    background-color: #212227;
+    max-width: 380px;
+    height: 500px;
+}
+
+.music .container .content_box{
+    position: absolute;
+    top: 140px;
+    left: 57px;
+    bottom: 0;
+    right: 0;
+    color: #2ebd59;
+    
+}
+.music .container .content_box h4{
+    font-size: 24px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: inherit;
+    margin-bottom: 17px;
+}
+
+.music .container .content_box span{
+    font-size: 18px;
+     font-family: 'Fira Sans', sans-serif;
+     font-weight: 400;
+     color: inherit;
+     text-transform: uppercase;
+} 
+
+.music .container .content_box p{
+    padding-top: 40px;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 21px;
+    color: #fff;
+    font-family: 'Fira Sans', sans-serif;
+    margin-bottom: 50px;
+}
+
+.music .container .content_box .button {
+    color: inherit;
+    display: block;
+    width: 180px;
+    height: 37px;
+    border: 2px solid #2ebd59;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 21px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.music .container .content_box .button:hover{
+    color: #fff;
+    background-color: #2ebd59;
+    transition: all 300ms ease-in-out;
+}
+
 
 .music-about{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+.music-about .grid-item:first-child{
+    background-color: #2ebd59;
+}
+.music-about .grid-item:last-child {
+    background-color: #282b2f;
+}
+
+.music-about .spotify{
+    margin-top: 140px;
+    margin-left: 212px;
+    color: #fff;
+     font-family: 'Fira Sans',sans-serif;
+}
+.music-about .spotify h4{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color:inherit;
+}
+.music-about .spotify p{
+    font-size: 36px;
+    font-weight: 100;
+    text-align: left;
+    margin-bottom: 40px;
+    line-height: 47px;
+}
+.music-about .spotify .button{
+    color: inherit;
+    display: block;
+    width: 297px;
+    height: 37px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 21px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Fira Sans', sans-serif;
+    letter-spacing: 0.3em;
+}
+
+
+
+
+
+.music-about .itunes {
+    margin-top: 140px;
+    margin-left: 62px;
+    color: #fff;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.music-about .itunes h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: inherit;
+}
+
+.music-about .itunes p {
+    font-size: 36px;
+    font-weight: 100;
+    text-align: left;
+    margin-bottom: 40px;
+    width: 470px;
+    line-height: 47px;
+}
+
+.music-about .itunes .button {
+    color: inherit;
+    display: block;
+    width: 297px;
+    height: 37px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 21px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Fira Sans', sans-serif;
+    letter-spacing: 0.3em;
+}
+
+
 
 footer{
     display: grid;
